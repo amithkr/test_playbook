@@ -1,5 +1,9 @@
 ---
-- hosts: webservers
-  remote_user: root
-  become: yes
-  become_user: postgres
+- hosts: all
+  - name: Install nginx web server
+    yum:
+      name: nginx
+      state: installed
+      update_cache: yes
+    notify:
+      - start nginx
