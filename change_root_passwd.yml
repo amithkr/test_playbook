@@ -1,2 +1,5 @@
 ---
 - hosts: all
+  tasks:
+  - name: change root passwd to hello123456
+    shell: echo "hello123456" | passwd root --stdin
