@@ -5,6 +5,7 @@
     copy:
       src: /root/.bashrc
       dest: /root/.bashrc
+      remote_src: yes
       owner: root
       group: root
       mode: 0644
