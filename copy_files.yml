@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+  - name: copy files to target
+    copy:
+      src: /root/.bashrc
+      dest: /root/.bashrc
+      owner: root
+      group: root
+      mode: 0644
