@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: change hello passwd to hello123456
+    shell: echo "hello123456" | passwd hello --stdin
